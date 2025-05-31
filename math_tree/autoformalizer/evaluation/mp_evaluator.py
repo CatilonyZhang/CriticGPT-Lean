@@ -17,7 +17,7 @@ from autoformalizer.eval_utils import get_datetime
 from autoformalizer.eval_utils.lean_feedback import has_error, parallel_lean4_feedback
 from evaluation.evaluation_constants import (
     LEAN4_DEFAULT_HEADER,
-    GenerationResult,
+    GenerationResult, 
     GenerationTask,
     ProofVerificationResult,
     ProofVerificationTask,
