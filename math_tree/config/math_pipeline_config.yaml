@@ -1,0 +1,20 @@
+# OpenAI 配置
+openai_api_key: ""  # 需要填入实际的 API key
+openai_model: "gpt-4"
+openai_base_url: "https://api.openai.com/v1"
+
+# Lean4 编译器配置
+lean_feedback: "local"  # 可选: "local" 或 "server"
+lean_server_url: "https://kimina.saas.moonshot.cn/lean4-evaluator"  # 仅在 server 模式下使用
+lean_workers: 1
+lean_timeout: 60
+lean_memory_limit: 512
+lean_retries: 1
+
+# 处理配置
+max_attempts: 3  # 最大尝试次数
+temperature: 0.2  # 生成温度
+
+# 输出配置
+output_dir: "results"  # 输出目录
+save_history: true  # 是否保存所有尝试的历史 

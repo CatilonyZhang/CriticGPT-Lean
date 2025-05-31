@@ -1,0 +1,22 @@
+# OpenAI 配置
+openai_api_key: ""  # 需要填入实际的 API key
+openai_model: "gpt-4"
+openai_base_url: "https://api.openai.com/v1"
+
+# Lean4 验证配置
+lean_feedback: "local"  # 可选: "local" 或 "server"
+lean_workers: 1
+lean_timeout: 60
+lean_memory_limit: 512
+lean_retries: 1
+
+# 自动形式化配置
+max_attempts: 3  # 最大尝试次数
+temperature: 0.2  # 生成温度
+
+# 模型配置
+model_path: ""  # 为未来的 VLLM 模型预留
+
+# 日志配置
+log_dir: "logs"  # 日志目录
+save_history: true  # 是否保存所有尝试的历史 
