@@ -1,0 +1,30 @@
+# Dataset configuration
+data_path: 'AI-MO/proofnet_test'
+data_split: ['train']
+has_header: true # if false, adds a default header
+has_sorry: false # if true, removes the sorry from the end of the formal statement
+formal_columns: ['formal_statement'] # columns to sum to get the formal statement
+info_columns: []
+additional_colunms: []
+index_column: 'name'
+
+# Verifier configuration
+lean_workers: 500
+lean_timeout: 100  # seconds
+lean_feedback: 'server' # server or local
+
+# Prompt Template (has to have 'formal_statement')
+prompt_template: 'Complete the following Lean 4 code:\n\n```lean4\n{formal_statement}'
+
+# Model configuration
+batch_size: 16
+model_path: 'deepseek-ai/DeepSeek-Prover-V1.5-RL'
+sampling_config:
+  n: 128
+  temperature: 1
+  max_tokens: 2048
+  top_p: 0.95
+  stop: ['```']
+
+do_evaluate: true
+store_intermediate_results: true

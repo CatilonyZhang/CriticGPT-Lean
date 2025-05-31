@@ -1,0 +1,50 @@
+### model
+model_name_or_path: deepseek-ai/DeepSeek-Prover-V1.5-RL
+
+### set wandb
+report_to: wandb
+run_name: deepseek_finetune
+
+### method
+stage: pt
+do_train: true
+finetuning_type: full
+deepspeed: config/deepspeed/ds_z3_config.json
+
+### dataset
+dataset: wholeproof-data-pt-250106
+packing: false
+template: default
+cutoff_len: 2048
+overwrite_cache: true
+preprocessing_num_workers: 16
+
+### output
+output_dir: /DATA/disk3/mert/models/DeepSeek-Prover-V1.5-RL_wholeproof-data-pt-250106
+logging_steps: 500
+save_strategy: epoch
+save_steps: 1
+plot_loss: true
+overwrite_output_dir: true
+
+### train
+per_device_train_batch_size: 6
+gradient_accumulation_steps: 1
+learning_rate: 5.0e-6
+num_train_epochs: 2.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+ddp_timeout: 180000000
+
+### eval
+val_size: 0.01
+per_device_eval_batch_size: 1
+eval_strategy: epoch
+eval_steps: 0.5
+
+### push to hub
+push_to_hub: true
+hub_private_repo: true
+hub_model_id: AI-MO/DeepSeek-Prover-V1.5-RL_wholeproof-data-pt-250106
+hub_strategy: end

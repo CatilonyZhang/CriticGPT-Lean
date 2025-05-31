@@ -1,0 +1,50 @@
+platform: "moonshot"
+job_id: "new_year_human_statments_prover_v7"
+# data configs
+datasets:
+  - name: "AI-MO/human-statements-dataset-v1-20250103"
+    # select_range: 70  # For testing purposes
+    splits: "train"
+shard_size: 500
+# the number of samples = repeat * num_samples_per_statement
+repeat: 1000
+max_workers: 10
+
+# enable the pipeline to filter statements that have proofs > filter_threshold, and 
+# also the (neg-)statements that have the (non-)negated version proved.
+enable_proof_filtering: true
+# the number of proof found in by the prover per statment to stop the proof generation
+filter_threshold: 10
+add_negation: true
+
+prover_params:
+  model_path:
+    - "deepseek-ai-DeepSeek-Prover-V1_5-RL"
+    - "deepseek-ai-DeepSeek-Prover-V1_5-RL-cot"
+    # - "AI-MO-DeepSeekProverV1_5_RL_241231"
+    - "AI-MO-Qwen_Prover_santa_1M_241231"
+  url:
+    - "https://deepseek-ai-DeepSeek-Prover-V1_5-RL.app.msh.team/v1/"
+    - "https://deepseek-ai-DeepSeek-Prover-V1_5-RL.app.msh.team/v1/"
+    # - "https://AI-MO-DeepSeekProverV1_5_RL_241231.app.msh.team/v1/"
+    - "https://AI-MO-Qwen_Prover_santa_1M_241231.app.msh.team/v1/"
+  num_samples_per_statement: 128
+  num_threads: 100
+  # optional, default is 2048
+  max_tokens: 1900
+
+verifier_params:
+  url: "http://lean4-evaluator-internal.app.msh.team/"
+  timeout: 60
+  num_threads: 250
+  batch_size: 1
+
+working_dir: "/mnt/moonfs/kimina-m2/jobs/{job_id}"
+huggingface_cache_dir: "/mnt/moonfs/kimina-m2/.cache/ttmmpp"
+
+# Derived directories (placeholders will be formatted in the code)
+input_dir: "{working_dir}/inputs"
+statements_dir: "{working_dir}/statements"
+proofs_dir: "{working_dir}/proofs"
+verified_proofs_dir: "{working_dir}/verified_proofs"
+proof_record_dir: "{working_dir}/proof_records.jsonl"

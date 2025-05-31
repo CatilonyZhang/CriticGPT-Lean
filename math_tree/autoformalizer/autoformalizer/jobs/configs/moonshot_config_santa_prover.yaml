@@ -1,0 +1,33 @@
+platform: "moonshot"
+job_id: "santa_prover_v1"
+input_dataset_path: "AI-MO/auto-problems"
+shard_size: 100
+max_workers: 10
+
+autoformalizer_params:
+  model_path: "AI-MO-Qwen7BCoder_Autoformalizer"
+  url: "https://AI-MO-Qwen7BCoder_Autoformalizer.app.msh.team/v1/"
+  num_samples_per_informal_statement: 45
+  num_threads: 100
+  add_negation: true
+
+prover_params:
+  model_path: "deepseek-ai-DeepSeek-Prover-V1_5-RL"
+  url: "https://deepseek-ai-DeepSeek-Prover-V1_5-RL.app.msh.team/v1/"
+  num_samples_per_statement: 32
+  num_threads: 1000
+
+verifier_params:
+  url: "http://lean4-evaluator-internal.app.msh.team/"
+  timeout: 60
+  num_threads: 250
+  batch_size: 1
+
+working_dir: "/mnt/moonfs/kimina-m2/jobs/{job_id}"
+
+# Derived directories (placeholders will be formatted in the code)
+problems_dir: "{working_dir}/problems"
+statements_dir: "{working_dir}/statements"
+verified_statements_dir: "{working_dir}/verified_statements"
+proofs_dir: "{working_dir}/proofs"
+verified_proofs_dir: "{working_dir}/verified_proofs"

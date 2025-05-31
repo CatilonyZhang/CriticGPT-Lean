@@ -1,0 +1,52 @@
+# Experiment configurations
+platform: "numina"
+job_id: "initial_step"
+max_workers: 10
+verbose: true
+
+
+# Dataset settings
+datasets:
+  - name: "HaimingW/test-statements-miniF2F-test"
+    split: "train"
+pass_at: 1
+shard_size: 1
+
+# TODO:
+# filter_threshold: 10
+# add_negation: true
+
+# Model arguments
+model_params:
+  model_path: 
+    - deepseek-ai/DeepSeek-Prover-V1_5-RL
+  url:
+    - "http://localhost:8081/v1"
+  n_retry: 0
+  temperature: 1.0
+  max_length: 2048
+  prompt_type: "text"
+  tokenizer_path: "/mnt/moonfs/wanghaiming-m2/models/deepseekprover/DeepSeek-Prover-V1.5-RL"
+
+# verifier arguments
+verifier_params:
+  url: "https://kimina.saas.moonshot.cn/lean4-evaluator"
+  timeout: 60
+
+# Search arguments
+search_params:
+  search_method: bfs
+  num_sampled_tactics: 32
+  max_expansions: 100
+  search_timeout: 300
+  step_timeout: null
+
+# Output directories
+working_dir: "/mnt/moonfs/wanghaiming-m2/jobs/{job_id}"
+huggingface_cache_dir: "/mnt/moonfs/wanghaiming-m2/.cache/ttmmpp"
+
+logging_dir: "{working_dir}/log/proof_search/"
+statement_dir: "{working_dir}/statements"
+verified_proofs_dir: "{working_dir}/verified_proofs"
+# proof_record_dir: "{working_dir}/proof_records.jsonl"
+

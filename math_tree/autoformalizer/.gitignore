@@ -1,0 +1,52 @@
+# Mantas' script gitignore
+autoformalizer/__pycache__/
+autoformalizer/data_utils/__pycache__/
+autoformalizer/model_utils/__pycache__/
+autoformalizer/eval_utils/__pycache__/
+autoformalizer.egg-info/
+train/wandb/
+scripts/mantas/dataset/*.jsonl
+scripts/mantas/reservoir/*.jsonl
+scripts/mantas/*.jsonl
+scripts/mantas/upload_datasets.ipynb
+step_prover_debug/*
+evaluation/__pycache__/
+evaluation/output_logs/
+prover/__pycache__/
+prover/tests/__pycache__/
+prover/*.pyc
+prover/*.log
+evaluation/eval.sh
+evaluation/eval_logs/
+lib/
+
+# Mert's script gitignore
+scripts/mert/__pycache__/
+scripts/mert/*.csv
+scripts/mert/fimo/
+scripts/mert/leanworkbook/
+scripts/mert/old
+scripts/mert/Putnam
+scripts/mert/bootstrap/
+scripts/mert/script.py
+autoformalizer/bootstrap/__pycache__/
+autoformalizer/evaluation/old/
+evaluation/old/
+
+# Marco's script gitignore
+scripts/marco/__pycache__/
+autoformalizer/fast_lean_feedback/__pycache__/
+
+# Moreira's script gitignore
+scripts/moreira/__pycache__/
+scripts/moreira/*.ipynb
+
+# Haiming's script gitignore
+scripts/haiming/__pycache__/
+prover/__pycache__/
+autoformalizer/clients/tests/__pycache__/
+autoformalizer/clients/__pycache__/
+autoformalizer/inference/__pycache__/
+log/
+__pycache__/
+.vscode/

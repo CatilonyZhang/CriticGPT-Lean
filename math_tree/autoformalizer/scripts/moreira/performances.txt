@@ -1,0 +1,3 @@
+DeepSeek-Prover-V1.5-SFT - 3%
+DeepSeek-Prover-V1.5-RL - 1.5%
+DeepSeek-Prover-V1.5-Base - 1%

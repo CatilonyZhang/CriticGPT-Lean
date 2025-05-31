@@ -1,0 +1,55 @@
+# Experiment configurations
+platform: "moonshot"
+job_id: "jeasper_step_prover_v3"
+max_workers: 3000
+verbose: true
+
+
+# Dataset settings
+datasets:
+  - name: "AI-MO/human-statements-dataset-v2-20250118"
+    split: "train"
+pass_at: 4
+shard_size: 1
+
+# TODO:
+# filter_threshold: 10
+# add_negation: true
+
+# Model arguments
+model_params:
+  model_path: 
+    - "deepseek-ai-DeepSeek-Prover-V1_5-RL"
+  url:
+    - "https://deepseek-ai-DeepSeek-Prover-V1_5-RL.app.msh.team/v1/"
+  n_retry: 0
+  temperature: 1.0
+  max_length: 2048
+  prompt_type: "text"
+  tokenizer_path: "/mnt/moonfs/wanghaiming-m2/models/deepseekprover/DeepSeek-Prover-V1.5-RL"
+
+# verifier arguments
+verifier_params:
+  url: "http://lean4-evaluator-internal.app.msh.team/"
+  timeout: 60
+
+# Search arguments
+search_params:
+  search_method: bfs
+  num_sampled_tactics: 64
+  max_expansions: 200
+  search_timeout: 3600000
+  step_timeout: null
+  serialize_interval: 60
+  resume_from_checkpoint: True
+
+
+# Output directories
+working_dir: "/mnt/moonfs/kimina-m2/jobs/{job_id}"
+huggingface_cache_dir: "/mnt/moonfs/kimina-m2/.cache/ttmmpp"
+
+logging_dir: "{working_dir}/log/proof_search/"
+statement_dir: "{working_dir}/statements"
+verified_proofs_dir: "{working_dir}/verified_proofs"
+# proof_record_dir: "{working_dir}/proof_records.jsonl"
+

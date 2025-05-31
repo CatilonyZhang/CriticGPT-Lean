@@ -1,0 +1,43 @@
+platform: "numina"
+job_id: "flying_ant_prover_v1"
+# data configs
+datasets:
+  - name: "AI-MO/auto-statements-moon-flying-ant-v1-20250110"
+    select_range: 1000  # For testing purposes
+    splits: "train"
+shard_size: 50
+# the number of samples = repeat * num_samples_per_statement
+repeat: 16
+max_workers: 4
+
+# enable the pipeline to filter statements that have proofs > filter_threshold, and 
+# also the (neg-)statements that have the (non-)negated version proved.
+enable_proof_filtering: true
+# the number of proof found in by the prover per statment to stop the proof generation
+filter_threshold: 3
+add_negation: false
+
+prover_params:
+  model_path:
+    - "AI-MO/Qwen2.5-Instruct_Prover_wholeproof-data-pt-beta1pick10-250107"
+  url:
+    - "http://localhost:8082/v1"
+  num_samples_per_statement: 8
+  num_threads: 5
+  # optional, default is 2048
+  max_tokens: 1900
+
+verifier_params:
+  url: "https://kimina.saas.moonshot.cn/lean4-evaluator"
+  timeout: 60
+  num_threads: 5
+  batch_size: 100
+
+working_dir: "{home}/jobs/proof_generation/{job_id}"
+
+# Derived directories (placeholders will be formatted in the code)
+input_dir: "{working_dir}/inputs"
+statements_dir: "{working_dir}/statements"
+proofs_dir: "{working_dir}/proofs"
+verified_proofs_dir: "{working_dir}/verified_proofs"
+proof_record_dir: "{working_dir}/proof_records.jsonl"

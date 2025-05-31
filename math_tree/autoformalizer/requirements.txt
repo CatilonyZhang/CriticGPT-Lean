@@ -1,0 +1,7 @@
+vllm
+transformers
+torch
+huggingface_hub
+datasets
+pyyaml
+text-dedup

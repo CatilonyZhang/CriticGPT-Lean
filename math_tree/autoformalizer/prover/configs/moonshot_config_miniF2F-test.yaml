@@ -1,0 +1,55 @@
+# Experiment configurations
+platform: "moonshot"
+job_id: "miniF2F-test-step-prover-v9"
+max_workers: 1000
+verbose: true
+
+
+# Dataset settings
+datasets:
+  - name: "HaimingW/test-statements-miniF2F-test"
+    split: "train"
+pass_at: 4
+shard_size: 1
+
+# TODO:
+# filter_threshold: 10
+# add_negation: true
+
+# Model arguments
+model_params:
+  model_path: 
+    - "svc-m2j-679128963928670001c97375-checkpoint-33000"
+  url:
+    - "https://svc-m2j-679128963928670001c97375-checkpoint-33000.app.msh.team/v1/"
+  n_retry: 0
+  temperature: 1.0
+  max_length: 2048
+  prompt_type: "text"
+  tokenizer_path: "/mnt/moonfs/wanghaiming-m2/models/deepseekprover/DeepSeek-Prover-V1.5-RL"
+
+# verifier arguments
+verifier_params:
+  url: "http://lean4-evaluator-internal.app.msh.team/"
+  timeout: 60
+
+# Search arguments
+search_params:
+  search_method: bfs
+  num_sampled_tactics: 64
+  max_expansions: 100
+  search_timeout: 3600000
+  step_timeout: null
+  serialize_interval: 36000000
+  resume_from_checkpoint: False
+
+
+# Output directories
+working_dir: "/mnt/moonfs/kimina-m2/jobs/{job_id}"
+huggingface_cache_dir: "/mnt/moonfs/kimina-m2/.cache/ttmmpp"
+
+logging_dir: "{working_dir}/log/proof_search/"
+statement_dir: "{working_dir}/statements"
+verified_proofs_dir: "{working_dir}/verified_proofs"
+# proof_record_dir: "{working_dir}/proof_records.jsonl"
+

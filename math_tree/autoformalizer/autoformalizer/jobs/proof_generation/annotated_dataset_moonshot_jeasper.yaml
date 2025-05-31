@@ -1,0 +1,44 @@
+platform: "moonshot"
+job_id: "jeasper_prover_v1"
+# data configs
+datasets:
+  - name: "AI-MO/human-statements-dataset-v2-20250118"
+    # select_range: 70  # For testing purposes
+    splits: "train"
+shard_size: 500
+# the number of samples = repeat * num_samples_per_statement
+repeat: 1000
+max_workers: 10
+
+# enable the pipeline to filter statements that have proofs > filter_threshold, and 
+# also the (neg-)statements that have the (non-)negated version proved.
+enable_proof_filtering: true
+# the number of proof found in by the prover per statment to stop the proof generation
+filter_threshold: 10
+add_negation: false
+
+prover_params:
+  model_path:
+    - "AI-MO-Qwen25-Coder-7B-wholeproof-pt-250115-v3"
+  url:
+    - "https://AI-MO-Qwen25-Coder-7B-wholeproof-pt-250115-v3.app.msh.team/v1/"
+  num_samples_per_statement: 128
+  num_threads: 100
+  # optional, default is 2048
+  max_tokens: 1900
+
+verifier_params:
+  url: "http://lean4-evaluator-internal.app.msh.team/"
+  timeout: 60
+  num_threads: 250
+  batch_size: 1
+
+working_dir: "/mnt/moonfs/kimina-m2/jobs/{job_id}"
+huggingface_cache_dir: "/mnt/moonfs/kimina-m2/.cache/ttmmpp"
+
+# Derived directories (placeholders will be formatted in the code)
+input_dir: "{working_dir}/inputs"
+statements_dir: "{working_dir}/statements"
+proofs_dir: "{working_dir}/proofs"
+verified_proofs_dir: "{working_dir}/verified_proofs"
+proof_record_dir: "{working_dir}/proof_records.jsonl"

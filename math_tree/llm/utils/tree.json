@@ -1,0 +1,96 @@
+[
+    {
+        "id": "Proposition1",
+        "type": "Proposition",
+        "content": "For every integer a, b, c ∈ ℤ such that a + b + c = 0, find all functions f: ℤ → ℤ satisfying:     f(a)^2 + f(b)^2 + f(c)^2 = 2f(a)f(b) + 2f(b)f(c) + 2f(c)f(a)",
+        "dependencies": []
+    },
+    {
+        "id": "AuxiliaryCondition1.1",
+        "type": "Auxiliary Condition",
+        "content": "Definition of Function f Define f: ℤ → ℤ",
+        "dependencies": [
+            "Proposition1"
+        ]
+    },
+    {
+        "id": "AuxiliaryCondition1.2",
+        "type": "Auxiliary Condition",
+        "content": "Functional Equation For all a, b, c ∈ ℤ with a + b + c = 0: f(a)² + f(b)² + f(c)² = 2f(a)f(b) + 2f(b)f(c) + 2f(c)f(a)",
+        "dependencies": [
+            "Proposition1"
+        ]
+    },
+    {
+        "id": "Case1",
+        "type": "Case",
+        "content": "There exists r ≥ 1 such that f(r) = 0",
+        "dependencies": [
+            "Proposition1"
+        ]
+    },
+    {
+        "id": "Case2",
+        "type": "Case",
+        "content": "f(1) = k ≠ 0",
+        "dependencies": [
+            "Proposition1"
+        ]
+    },
+    {
+        "id": "Sub-Case1.1",
+        "type": "Sub-Case",
+        "content": "r = 1",
+        "dependencies": [
+            "Case1"
+        ]
+    },
+    {
+        "id": "Sub-Case2.1",
+        "type": "Sub-Case",
+        "content": "f(2) = 0",
+        "dependencies": [
+            "Case2"
+        ]
+    },
+    {
+        "id": "Sub-Case2.2",
+        "type": "Sub-Case",
+        "content": "f(2) = 4k",
+        "dependencies": [
+            "Case2"
+        ]
+    },
+    {
+        "id": "Sub-Sub-Case2.2.1",
+        "type": "Sub-Sub-Case",
+        "content": "f(4) = 0",
+        "dependencies": [
+            "Sub-Case2.2"
+        ]
+    },
+    {
+        "id": "Sub-Sub-Case2.2.2",
+        "type": "Sub-Sub-Case",
+        "content": "f(4) = 16k",
+        "dependencies": [
+            "Sub-Case2.2"
+        ]
+    },
+    {
+        "id": "Proposition2.2.1",
+        "type": "Proposition",
+        "content": "f is a period 4 function",
+        "dependencies": [
+            "Sub-Sub-Case2.2.1"
+        ]
+    },
+    {
+        "id": "Proposition2.2.2",
+        "type": "Proposition",
+        "content": "f(x) = kx² for all x ∈ ℤ",
+        "dependencies": [
+            "Sub-Sub-Case2.2.2"
+        ]
+    }
+]

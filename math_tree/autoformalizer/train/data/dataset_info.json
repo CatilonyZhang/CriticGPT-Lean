@@ -1,0 +1,237 @@
+{
+  "autoformalization_alpacav1": {
+    "hf_hub_url": "AI-MO/AutoformalizationV1_Alpaca",
+    "ms_hub_url": "AI-MO/AutoformalizationV1_Alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output",
+      "system": "system"
+    }
+  },
+  "autoformalization_alpacav1_1": {
+    "hf_hub_url": "AI-MO/AutoformalizationV1_1_Alpaca",
+    "ms_hub_url": "AI-MO/AutoformalizationV1_1_Alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output",
+      "system": "system"
+    }
+  },
+  "autoformalization_alpacav1b1": {
+    "hf_hub_url": "AI-MO/AutoformalizationV1B1_Alpaca",
+    "ms_hub_url": "AI-MO/AutoformalizationV1B1_Alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output",
+      "system": "system"
+    }
+  },
+  "autoformalization_alpacav1b2": {
+    "hf_hub_url": "AI-MO/AutoformalizationV1B2_Alpaca",
+    "ms_hub_url": "AI-MO/AutoformalizationV1B2_Alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output",
+      "system": "system"
+    }
+  },
+  "autoformalization_alpacav1b3": {
+    "hf_hub_url": "AI-MO/AutoformalizationV1B3_Alpaca",
+    "ms_hub_url": "AI-MO/AutoformalizationV1B3_Alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output",
+      "system": "system"
+    }
+  },
+  "autoformalization_alpacav1b4": {
+    "hf_hub_url": "AI-MO/AutoformalizationV1B4_Alpaca",
+    "ms_hub_url": "AI-MO/AutoformalizationV1B4_Alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output",
+      "system": "system"
+    }
+  },
+  "autoformalization_alpacav1b5": {
+    "hf_hub_url": "AI-MO/AutoformalizationV1B5_Alpaca",
+    "ms_hub_url": "AI-MO/AutoformalizationV1B5_Alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output",
+      "system": "system"
+    }
+  },
+  "autoformalization_alpacav1b6": {
+    "hf_hub_url": "AI-MO/AutoformalizationV1B6_Alpaca",
+    "ms_hub_url": "AI-MO/AutoformalizationV1B6_Alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output",
+      "system": "system"
+    }
+  },
+  "autoformalization_alpacav1b7": {
+    "hf_hub_url": "AI-MO/AutoformalizationV1B7_Alpaca",
+    "ms_hub_url": "AI-MO/AutoformalizationV1B7_Alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output",
+      "system": "system"
+    }
+  },  
+  "autoformalization_alpacav2b0": {
+    "hf_hub_url": "AI-MO/AutoformalizationV2B0_Alpaca",
+    "ms_hub_url": "AI-MO/AutoformalizationV2B0_Alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output",
+      "system": "system"
+    }
+  },
+  "lean-cpt-v0.1": {
+    "hf_hub_url": "AI-MO/lean-cpt-v0.1",
+    "ms_hub_url": "AI-MO/lean-cpt-v0.1",
+    "columns": {
+      "prompt": "text"
+    }
+  },
+  "wholeproof-data-nomathlib-ft-241211": {
+    "hf_hub_url": "AI-MO/wholeproof-data-nomathlib-ft-241211",
+    "ms_hub_url": "AI-MO/wholeproof-data-nomathlib-ft-241211",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output",
+      "system": "system"
+    }
+  },
+  "wholeproof-data-ft-241211": {
+    "hf_hub_url": "AI-MO/wholeproof-data-ft-241211",
+    "ms_hub_url": "AI-MO/wholeproof-data-ft-241211",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output",
+      "system": "system"
+    }
+  },
+  "wholeproof-data-pt-241211": {
+    "hf_hub_url": "AI-MO/wholeproof-data-pt-241211",
+    "ms_hub_url": "AI-MO/wholeproof-data-pt-241211",
+    "columns": {
+      "prompt": "text"
+    }
+  },
+  "wholeproof-data-nomathlib-pt-241211": {
+    "hf_hub_url": "AI-MO/wholeproof-data-nomathlib-pt-241211",
+    "ms_hub_url": "AI-MO/wholeproof-data-nomathlib-pt-241211",
+    "columns": {
+      "prompt": "text"
+    }
+  },
+  "wholeproof-data-pt-241219": {
+    "hf_hub_url": "AI-MO/wholeproof-data-pt-241219",
+    "ms_hub_url": "AI-MO/wholeproof-data-pt-241219",
+    "columns": {
+      "prompt": "text"
+    }
+  },
+  "wholeproof-data-pt-241229": {
+    "hf_hub_url": "AI-MO/wholeproof-data-pt-241229",
+    "ms_hub_url": "AI-MO/wholeproof-data-pt-241229",
+    "columns": {
+      "prompt": "text"
+    }
+  },
+  "wholeproof-data-pt-241231": {
+    "hf_hub_url": "AI-MO/wholeproof-data-pt-241231",
+    "ms_hub_url": "AI-MO/wholeproof-data-pt-241231",
+    "columns": {
+      "prompt": "text"
+    }
+  },
+  "auto-sft-moon-santa-v1beta16-pt": {
+    "hf_hub_url": "AI-MO/auto-sft-moon-santa-v1beta16-pt",
+    "ms_hub_url": "AI-MO/auto-sft-moon-santa-v1beta16-pt",
+    "columns": {
+      "prompt": "text"
+    }
+  },
+  "auto-sft-moon-santa-v1beta1-pt": {
+    "hf_hub_url": "AI-MO/auto-sft-moon-santa-v1beta1-pt",
+    "ms_hub_url": "AI-MO/auto-sft-moon-santa-v1beta1-pt",
+    "columns": {
+      "prompt": "text"
+    }
+  },
+  "auto-sft-moon-santa-v1beta8-pt": {
+    "hf_hub_url": "AI-MO/auto-sft-moon-santa-v1beta8-pt",
+    "ms_hub_url": "AI-MO/auto-sft-moon-santa-v1beta8-pt",
+    "columns": {
+      "prompt": "text"
+    }
+  },
+  "auto-sft-moon-santa-v1beta4-pt": {
+    "hf_hub_url": "AI-MO/auto-sft-moon-santa-v1beta4-pt",
+    "ms_hub_url": "AI-MO/auto-sft-moon-santa-v1beta4-pt",
+    "columns": {
+      "prompt": "text"
+    }
+  },
+  "wholeproof-data-pt-250106": {
+    "hf_hub_url": "AI-MO/wholeproof-data-pt-250106",
+    "ms_hub_url": "AI-MO/wholeproof-data-pt-250106",
+    "columns": {
+      "prompt": "text"
+    }
+  },
+  "wholeproof-data-pt-250107": {
+    "hf_hub_url": "AI-MO/wholeproof-data-pt-250107",
+    "ms_hub_url": "AI-MO/wholeproof-data-pt-250107",
+    "columns": {
+      "prompt": "text"
+    }
+  },
+  "wholeproof-data-pt-beta1pick10-250107": {
+    "hf_hub_url": "AI-MO/wholeproof-data-pt-beta1pick10-250107",
+    "ms_hub_url": "AI-MO/wholeproof-data-pt-beta1pick10-250107",
+    "columns": {
+      "prompt": "text"
+    }
+  },
+  "wholeproof-data-pt-beta1pick100-250107": {
+    "hf_hub_url": "AI-MO/wholeproof-data-pt-beta1pick100-250107",
+    "ms_hub_url": "AI-MO/wholeproof-data-pt-beta1pick100-250107",
+    "columns": {
+      "prompt": "text"
+    }
+  },
+  "wholeproof-data-pt-250109": {
+    "hf_hub_url": "AI-MO/wholeproof-data-pt-250109",
+    "ms_hub_url": "AI-MO/wholeproof-data-pt-250109",
+    "columns": {
+      "prompt": "text"
+    }
+  },
+  "numina-math-lean4-sft":{
+    "hf_hub_url": "AI-MO/numina-math-lean4-sft",
+    "ms_hub_url": "AI-MO/numina-math-lean4-sft",
+    "columns": {
+      "prompt": "text",
+      "query": "",
+      "response": "lean4_solution",
+      "system": ""
+    }
+  }
+}

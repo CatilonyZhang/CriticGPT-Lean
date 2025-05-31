@@ -1,0 +1,38 @@
+platform: "numina"
+job_id: "santa_prover"
+input_dataset_path: "AI-MO/auto-problems"
+# recommand to be <= 1000
+shard_size: 50
+# put None if want to run for whole dataset
+select_range: 120  # For testing purposes
+max_workers: 4
+
+autoformalizer_params:
+  model_path: "AI-MO/Qwen7BCoder_Autoformalizer"
+  url: "http://localhost:8081/v1"
+  num_samples_per_informal_statement: 4
+  num_threads: 20
+  add_negation: true
+  # add_informal is option, where to add the informal statement back after the formalization
+  add_informal: false
+
+prover_params:
+  model_path: "deepseek-ai/DeepSeek-Prover-V1.5-RL"
+  url: "http://localhost:8082/v1"
+  num_samples_per_statement: 4
+  num_threads: 20
+
+verifier_params:
+  url: "https://kimina.saas.moonshot.cn/lean4-evaluator"
+  timeout: 60
+  num_threads: 5
+  batch_size: 100
+
+working_dir: "{home}/jobs/{job_id}"
+
+# Derived directories (placeholders will be formatted in the code)
+problems_dir: "{working_dir}/problems"
+statements_dir: "{working_dir}/statements"
+verified_statements_dir: "{working_dir}/verified_statements"
+proofs_dir: "{working_dir}/proofs"
+verified_proofs_dir: "{working_dir}/verified_proofs"

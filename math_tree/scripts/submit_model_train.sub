@@ -1,0 +1,17 @@
+# Job Definition
+executable = /bin/bash
+arguments = /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/scripts/zhouliang/train_and_eval_DeepSeekProverV1.5_RL.sh
+
+# Resource Requests
+request_memory = 120000MB
+request_cpus = 16
+request_gpus = 4
+requirements = TARGET.CUDAGlobalMemoryMb > 40000
+
+# Input/Output/Error files
+error = /lustre/fast/fast/txiao/zly/lean/math_tree/scripts/stderr
+output = /lustre/fast/fast/txiao/zly/lean/math_tree/scripts/stdout
+log = /lustre/fast/fast/txiao/zly/lean/math_tree/scripts/test.log
+
+# Queue the job
+queue

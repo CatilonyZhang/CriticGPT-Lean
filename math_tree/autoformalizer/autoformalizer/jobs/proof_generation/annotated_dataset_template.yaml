@@ -1,0 +1,43 @@
+platform: "numina"
+job_id: "annotated_data_inference"
+# data configs
+datasets:
+  - name: "AI-MO/inhouse-evaluation-v1-20250102"
+    select_range: 70  # For testing purposes
+    splits: "full"
+shard_size: 50
+# the number of samples = repeat * num_samples_per_statement
+repeat: 500
+max_workers: 4
+
+# enable the pipeline to filter statements that have proofs > filter_threshold, and 
+# also the (neg-)statements that have the (non-)negated version proved.
+enable_proof_filtering: true
+# the number of proof found in by the prover per statment to stop the proof generation
+filter_threshold: 10
+add_negation: true
+
+prover_params:
+  model_path: 
+    - "deepseek-ai/DeepSeek-Prover-V1.5-RL"
+  url: 
+    - "http://localhost:8082/v1"
+  num_samples_per_statement: 8
+  num_threads: 20
+  # optional, default is 2048
+  max_tokens: 2048
+
+verifier_params:
+  url: "https://kimina.saas.moonshot.cn/lean4-evaluator"
+  timeout: 60
+  num_threads: 5
+  batch_size: 100
+
+working_dir: "{home}/jobs/proof_generation/{job_id}"
+
+# Derived directories (placeholders will be formatted in the code)
+input_dir: "{working_dir}/inputs"
+statements_dir: "{working_dir}/statements"
+proofs_dir: "{working_dir}/proofs"
+verified_proofs_dir: "{working_dir}/verified_proofs"
+proof_record_dir: "{working_dir}/proof_records.jsonl"

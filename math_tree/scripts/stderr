@@ -1,0 +1,1712 @@
+/home/txiao/miniconda3/envs/autoformalization/lib/python3.12/site-packages/vllm/executor/gpu_executor.py:50: UserWarning: Failed to get the IP address, using 0.0.0.0 by default.The value can be set by the environment variable VLLM_HOST_IP or HOST_IP.
+  get_ip(), get_open_port())
+Loading safetensors checkpoint shards:   0% Completed | 0/3 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards:  33% Completed | 1/3 [00:03<00:06,  3.14s/it]
+Loading safetensors checkpoint shards:  67% Completed | 2/3 [00:06<00:03,  3.05s/it]
+Loading safetensors checkpoint shards: 100% Completed | 3/3 [00:11<00:00,  4.17s/it]
+Loading safetensors checkpoint shards: 100% Completed | 3/3 [00:11<00:00,  3.88s/it]
+
+Downloading readme:   0%|          | 0.00/358 [00:00<?, ?B/s]Downloading readme: 100%|██████████| 358/358 [00:00<00:00, 2.88kB/s]Downloading readme: 100%|██████████| 358/358 [00:00<00:00, 2.83kB/s]
+Downloading data:   0%|          | 0.00/74.2k [00:00<?, ?B/s]Downloading data: 100%|██████████| 74.2k/74.2k [00:00<00:00, 247kB/s]Downloading data: 100%|██████████| 74.2k/74.2k [00:00<00:00, 244kB/s]
+Generating train split:   0%|          | 0/244 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 244/244 [00:00<00:00, 3554.21 examples/s]
+Parameter 'function'=<function ProverEvaluator.__init__.<locals>.create_statements at 0x14cf740e9d00> of the transform datasets.arrow_dataset.Dataset._map_single couldn't be hashed properly, a random hash was used instead. Make sure your transforms and parameters are serializable with pickle or dill for the dataset fingerprinting and caching to work. If you reuse this transform, the caching mechanism will consider it to be different from the previous calls and recompute everything. This warning is only showed once. Subsequent hashing failures won't be showed.
+Map:   0%|          | 0/244 [00:00<?, ? examples/s]Map: 100%|██████████| 244/244 [00:00<00:00, 5097.81 examples/s]
+INFO:/lustre/fast/fast/txiao/zly/ckpt/DeepSeek-Prover-V1.5-RL_numina-math-lean4-sft_evaluator_logger:Loaded configuration from /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/configs/slow_eval/config_minif2f.yaml
+INFO:/lustre/fast/fast/txiao/zly/ckpt/DeepSeek-Prover-V1.5-RL_numina-math-lean4-sft_evaluator_logger:Total dataset length: 244,
+            Batch_size: 8
+Prompt template:
+            Complete the following Lean 4 code:\n\n```lean4\n{formal_statement}
+Processing batches:   0%|          | 0/31 [00:00<?, ?it/s]INFO:/lustre/fast/fast/txiao/zly/ckpt/DeepSeek-Prover-V1.5-RL_numina-math-lean4-sft_evaluator_logger:Generating proofs...
+
+
+Processed prompts:   0%|          | 0/8 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s][A
+Processed prompts:  12%|█▎        | 1/8 [00:05<00:41,  5.94s/it, est. speed input: 43.63 toks/s, output: 1014.83 toks/s][A
+Processed prompts:  25%|██▌       | 2/8 [00:06<00:15,  2.51s/it, est. speed input: 80.77 toks/s, output: 1546.76 toks/s][A
+Processed prompts:  38%|███▊      | 3/8 [00:08<00:11,  2.38s/it, est. speed input: 79.08 toks/s, output: 1747.99 toks/s][A
+Processed prompts:  50%|█████     | 4/8 [00:08<00:06,  1.68s/it, est. speed input: 110.05 toks/s, output: 2209.42 toks/s][A
+Processed prompts:  62%|██████▎   | 5/8 [00:11<00:05,  1.95s/it, est. speed input: 114.40 toks/s, output: 2290.77 toks/s][A
+Processed prompts:  75%|███████▌  | 6/8 [00:12<00:03,  1.83s/it, est. speed input: 114.98 toks/s, output: 2684.92 toks/s][A
+Processed prompts:  88%|████████▊ | 7/8 [00:25<00:05,  5.38s/it, est. speed input: 63.29 toks/s, output: 1898.73 toks/s] [A
+Processed prompts: 100%|██████████| 8/8 [00:26<00:00,  3.89s/it, est. speed input: 66.05 toks/s, output: 2229.79 toks/s][AProcessed prompts: 100%|██████████| 8/8 [00:26<00:00,  3.29s/it, est. speed input: 66.05 toks/s, output: 2229.79 toks/s]
+INFO:/lustre/fast/fast/txiao/zly/ckpt/DeepSeek-Prover-V1.5-RL_numina-math-lean4-sft_evaluator_logger:Done generating. Verifying proofs...
+
+
+Processing Lean 4 Codes:   0%|          | 0/512 [00:00<?, ?it/s][AProcessing Lean 4 Codes:   0%|          | 0/512 [00:00<?, ?it/s]
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+2025-02-09 04:16:11 [ERROR] Error processing batch: Path to mathlib does not exist: None/mathlib4
+ERROR:/lustre/fast/fast/txiao/zly/ckpt/DeepSeek-Prover-V1.5-RL_numina-math-lean4-sft_evaluator_logger:Error processing batch: Path to mathlib does not exist: None/mathlib4
+2025-02-09 04:16:11 [ERROR] Error processing batch: Path to mathlib does not exist: None/mathlib4
+ERROR:/lustre/fast/fast/txiao/zly/ckpt/DeepSeek-Prover-V1.5-RL_numina-math-lean4-sft_evaluator_logger:Error processing batch: Path to mathlib does not exist: None/mathlib4
+INFO:/lustre/fast/fast/txiao/zly/ckpt/DeepSeek-Prover-V1.5-RL_numina-math-lean4-sft_evaluator_logger:Number of correct proofs so far: 0
+INFO:/lustre/fast/fast/txiao/zly/ckpt/DeepSeek-Prover-V1.5-RL_numina-math-lean4-sft_evaluator_logger:Ids: set()
+Processing batches:   3%|▎         | 1/31 [00:27<13:38, 27.27s/it]INFO:/lustre/fast/fast/txiao/zly/ckpt/DeepSeek-Prover-V1.5-RL_numina-math-lean4-sft_evaluator_logger:Generating proofs...
+
+
+Processed prompts:   0%|          | 0/8 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s][A
+Processed prompts:  12%|█▎        | 1/8 [00:03<00:27,  3.87s/it, est. speed input: 45.22 toks/s, output: 1181.12 toks/s][A
+Processed prompts:  25%|██▌       | 2/8 [00:04<00:12,  2.16s/it, est. speed input: 65.92 toks/s, output: 1680.37 toks/s][A
+Processed prompts:  38%|███▊      | 3/8 [00:09<00:16,  3.27s/it, est. speed input: 59.62 toks/s, output: 1316.45 toks/s][A
+Processed prompts:  50%|█████     | 4/8 [00:10<00:10,  2.58s/it, est. speed input: 65.10 toks/s, output: 1752.54 toks/s][A
+Processed prompts:  62%|██████▎   | 5/8 [00:11<00:05,  1.98s/it, est. speed input: 80.59 toks/s, output: 2473.84 toks/s][A
+Processed prompts:  75%|███████▌  | 6/8 [00:12<00:03,  1.62s/it, est. speed input: 98.98 toks/s, output: 2712.32 toks/s][A
+Processed prompts:  88%|████████▊ | 7/8 [00:24<00:04,  4.95s/it, est. speed input: 56.60 toks/s, output: 1738.83 toks/s][A
+Processed prompts: 100%|██████████| 8/8 [00:25<00:00,  3.58s/it, est. speed input: 60.60 toks/s, output: 2058.85 toks/s][AProcessed prompts: 100%|██████████| 8/8 [00:25<00:00,  3.15s/it, est. speed input: 60.60 toks/s, output: 2058.85 toks/s]
+INFO:/lustre/fast/fast/txiao/zly/ckpt/DeepSeek-Prover-V1.5-RL_numina-math-lean4-sft_evaluator_logger:Done generating. Verifying proofs...
+
+
+Processing Lean 4 Codes:   0%|          | 0/512 [00:00<?, ?it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:   0%|          | 1/512 [00:00<01:58,  4.31it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:   0%|          | 2/512 [00:00<03:47,  2.24it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:   2%|▏         | 10/512 [00:01<00:50, 10.01it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:   7%|▋         | 34/512 [00:01<00:13, 36.74it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:   8%|▊         | 40/512 [00:01<00:12, 38.82it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:   9%|▉         | 46/512 [00:02<00:19, 24.22it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  10%|▉         | 50/512 [00:02<00:18, 24.74it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  13%|█▎        | 66/512 [00:02<00:13, 32.94it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  14%|█▍        | 71/512 [00:02<00:17, 24.76it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  15%|█▌        | 78/512 [00:03<00:17, 24.54it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:  17%|█▋        | 88/512 [00:03<00:13, 30.62it/s]ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+[AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  18%|█▊        | 92/512 [00:03<00:18, 22.27it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  19%|█▊        | 95/512 [00:04<00:19, 20.97it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  19%|█▉        | 98/512 [00:04<00:19, 21.04it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  20%|██        | 103/512 [00:04<00:18, 21.74it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  21%|██▏       | 110/512 [00:04<00:14, 28.49it/s]ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+[AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  22%|██▏       | 114/512 [00:04<00:16, 23.77it/s][A
+Processing Lean 4 Codes:  23%|██▎       | 117/512 [00:04<00:17, 22.14it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  24%|██▍       | 125/512 [00:05<00:14, 27.24it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:  25%|██▌       | 129/512 [00:05<00:14, 25.82it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  26%|██▋       | 135/512 [00:05<00:12, 31.16it/s]ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+[AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  27%|██▋       | 139/512 [00:05<00:19, 19.38it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:  28%|██▊       | 143/512 [00:06<00:21, 17.34it/s]ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+[A
+Processing Lean 4 Codes:  29%|██▊       | 146/512 [00:06<00:21, 16.98it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  32%|███▏      | 163/512 [00:06<00:10, 33.10it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  33%|███▎      | 171/512 [00:06<00:10, 32.21it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  35%|███▌      | 181/512 [00:07<00:09, 33.58it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  38%|███▊      | 194/512 [00:07<00:06, 45.70it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  39%|███▉      | 200/512 [00:07<00:07, 39.01it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  40%|████      | 206/512 [00:07<00:07, 38.36it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  41%|████      | 211/512 [00:07<00:07, 38.95it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  42%|████▏     | 216/512 [00:07<00:08, 36.23it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  43%|████▎     | 220/512 [00:08<00:11, 24.89it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  45%|████▍     | 230/512 [00:08<00:09, 30.88it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  47%|████▋     | 239/512 [00:08<00:09, 29.76it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  48%|████▊     | 248/512 [00:09<00:07, 34.24it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  49%|████▉     | 252/512 [00:09<00:07, 34.51it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  50%|█████     | 256/512 [00:09<00:08, 29.79it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  51%|█████     | 260/512 [00:09<00:09, 26.05it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  52%|█████▏    | 264/512 [00:09<00:11, 22.13it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  54%|█████▎    | 274/512 [00:10<00:07, 32.13it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  54%|█████▍    | 279/512 [00:10<00:09, 25.17it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  56%|█████▋    | 288/512 [00:10<00:07, 31.09it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  57%|█████▋    | 292/512 [00:10<00:08, 26.65it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  58%|█████▊    | 296/512 [00:10<00:07, 28.68it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  59%|█████▊    | 300/512 [00:11<00:07, 28.51it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  59%|█████▉    | 304/512 [00:11<00:07, 27.02it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:  60%|█████▉    | 307/512 [00:11<00:07, 27.29it/s]ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+[AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:  61%|██████    | 310/512 [00:11<00:09, 22.07it/s][A
+Processing Lean 4 Codes:  61%|██████    | 313/512 [00:11<00:08, 22.16it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:  62%|██████▏   | 317/512 [00:11<00:09, 21.47it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  64%|██████▍   | 328/512 [00:12<00:06, 30.29it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  65%|██████▍   | 331/512 [00:12<00:06, 26.42it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  66%|██████▋   | 340/512 [00:12<00:05, 30.05it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:  67%|██████▋   | 345/512 [00:12<00:05, 31.44it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:  68%|██████▊   | 349/512 [00:12<00:05, 28.43it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  69%|██████▉   | 353/512 [00:13<00:06, 25.82it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  70%|██████▉   | 356/512 [00:13<00:07, 22.02it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  71%|███████   | 362/512 [00:13<00:06, 21.63it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  72%|███████▏  | 371/512 [00:13<00:04, 31.82it/s]ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+[AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  73%|███████▎  | 375/512 [00:13<00:05, 26.28it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  74%|███████▍  | 379/512 [00:14<00:05, 24.71it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  75%|███████▌  | 386/512 [00:14<00:03, 31.51it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  76%|███████▌  | 390/512 [00:14<00:04, 25.17it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:  77%|███████▋  | 395/512 [00:14<00:04, 28.60it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  78%|███████▊  | 399/512 [00:14<00:04, 23.35it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  79%|███████▊  | 403/512 [00:15<00:05, 19.92it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:  80%|███████▉  | 409/512 [00:15<00:03, 25.79it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  81%|████████  | 413/512 [00:15<00:04, 21.12it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  82%|████████▏ | 420/512 [00:15<00:03, 25.37it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  83%|████████▎ | 427/512 [00:15<00:02, 32.09it/s]ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+[AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  84%|████████▍ | 431/512 [00:15<00:02, 31.95it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  85%|████████▍ | 435/512 [00:16<00:02, 32.58it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  86%|████████▌ | 439/512 [00:16<00:02, 28.08it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  87%|████████▋ | 444/512 [00:16<00:02, 24.01it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  88%|████████▊ | 453/512 [00:16<00:01, 32.76it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  89%|████████▉ | 457/512 [00:16<00:02, 26.17it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  90%|█████████ | 461/512 [00:17<00:02, 21.16it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  92%|█████████▏| 470/512 [00:17<00:01, 29.02it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  93%|█████████▎| 476/512 [00:17<00:01, 33.48it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  94%|█████████▍| 481/512 [00:17<00:01, 30.47it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  95%|█████████▍| 485/512 [00:17<00:00, 27.31it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  96%|█████████▌| 492/512 [00:18<00:00, 33.69it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  97%|█████████▋| 496/512 [00:18<00:00, 24.13it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  99%|█████████▉| 507/512 [00:18<00:00, 36.29it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes: 100%|██████████| 512/512 [00:18<00:00, 27.58it/s]
+INFO:root:Total time taken: 18.61 seconds
+INFO:/lustre/fast/fast/txiao/zly/ckpt/DeepSeek-Prover-V1.5-RL_numina-math-lean4-sft_evaluator_logger:Data 8 to 16 finished
+INFO:/lustre/fast/fast/txiao/zly/ckpt/DeepSeek-Prover-V1.5-RL_numina-math-lean4-sft_evaluator_logger:Number of correct proofs so far: 0
+INFO:/lustre/fast/fast/txiao/zly/ckpt/DeepSeek-Prover-V1.5-RL_numina-math-lean4-sft_evaluator_logger:Ids: set()
+Processing batches:   6%|▋         | 2/31 [01:11<17:54, 37.05s/it]INFO:/lustre/fast/fast/txiao/zly/ckpt/DeepSeek-Prover-V1.5-RL_numina-math-lean4-sft_evaluator_logger:Generating proofs...
+
+
+Processed prompts:   0%|          | 0/8 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s][A
+Processed prompts:  12%|█▎        | 1/8 [00:06<00:46,  6.68s/it, est. speed input: 24.99 toks/s, output: 506.61 toks/s][A
+Processed prompts:  25%|██▌       | 2/8 [00:07<00:19,  3.21s/it, est. speed input: 48.87 toks/s, output: 1278.47 toks/s][A
+Processed prompts:  50%|█████     | 4/8 [00:11<00:09,  2.37s/it, est. speed input: 62.40 toks/s, output: 1685.34 toks/s][A
+Processed prompts:  62%|██████▎   | 5/8 [00:14<00:08,  2.73s/it, est. speed input: 64.12 toks/s, output: 1762.38 toks/s][A
+Processed prompts:  75%|███████▌  | 6/8 [00:27<00:11,  5.65s/it, est. speed input: 44.65 toks/s, output: 1316.34 toks/s][A
+Processed prompts: 100%|██████████| 8/8 [00:27<00:00,  3.20s/it, est. speed input: 55.63 toks/s, output: 2435.32 toks/s][AProcessed prompts: 100%|██████████| 8/8 [00:27<00:00,  3.47s/it, est. speed input: 55.63 toks/s, output: 2435.32 toks/s]
+INFO:/lustre/fast/fast/txiao/zly/ckpt/DeepSeek-Prover-V1.5-RL_numina-math-lean4-sft_evaluator_logger:Done generating. Verifying proofs...
+
+
+Processing Lean 4 Codes:   0%|          | 0/512 [00:00<?, ?it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:   0%|          | 1/512 [00:00<02:17,  3.72it/s][A
+Processing Lean 4 Codes:   0%|          | 2/512 [00:00<01:50,  4.61it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:   1%|          | 3/512 [00:00<02:06,  4.02it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:   2%|▏         | 9/512 [00:00<00:41, 12.21it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:   2%|▏         | 11/512 [00:01<00:55,  9.07it/s]ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+[A
+Processing Lean 4 Codes:   3%|▎         | 13/512 [00:01<00:49,  9.99it/s][A
+Processing Lean 4 Codes:   3%|▎         | 15/512 [00:01<00:44, 11.10it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:   8%|▊         | 41/512 [00:01<00:09, 51.51it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:   9%|▉         | 48/512 [00:01<00:09, 47.11it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  11%|█         | 54/512 [00:02<00:10, 44.54it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  12%|█▏        | 59/512 [00:02<00:11, 38.56it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  12%|█▎        | 64/512 [00:02<00:14, 31.65it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  15%|█▍        | 75/512 [00:02<00:10, 42.33it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:  16%|█▌        | 80/512 [00:03<00:15, 27.82it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  17%|█▋        | 85/512 [00:03<00:15, 26.98it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  18%|█▊        | 92/512 [00:03<00:12, 32.51it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:  19%|█▉        | 97/512 [00:03<00:15, 27.44it/s]ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+[AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  20%|█▉        | 101/512 [00:04<00:20, 20.55it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  21%|██▏       | 109/512 [00:04<00:14, 28.69it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  22%|██▏       | 114/512 [00:04<00:13, 29.92it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  23%|██▎       | 118/512 [00:04<00:14, 26.56it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  25%|██▍       | 126/512 [00:04<00:12, 30.13it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  26%|██▌       | 131/512 [00:04<00:11, 33.30it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  26%|██▋       | 135/512 [00:04<00:11, 31.70it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:  27%|██▋       | 139/512 [00:05<00:12, 30.52it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  28%|██▊       | 143/512 [00:05<00:18, 19.52it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  29%|██▊       | 146/512 [00:05<00:19, 19.12it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  29%|██▉       | 150/512 [00:05<00:19, 18.94it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:  31%|███       | 159/512 [00:06<00:12, 27.84it/s]ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+[A
+Processing Lean 4 Codes:  32%|███▏      | 163/512 [00:06<00:14, 23.63it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:  33%|███▎      | 167/512 [00:06<00:18, 18.97it/s][A
+Processing Lean 4 Codes:  33%|███▎      | 170/512 [00:06<00:17, 19.98it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:  35%|███▍      | 179/512 [00:07<00:12, 27.49it/s][A
+Processing Lean 4 Codes:  36%|███▌      | 183/512 [00:07<00:12, 26.05it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:  37%|███▋      | 190/512 [00:07<00:10, 30.75it/s]ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+[A
+Processing Lean 4 Codes:  38%|███▊      | 194/512 [00:07<00:12, 25.52it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  38%|███▊      | 197/512 [00:07<00:12, 24.43it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  39%|███▉      | 201/512 [00:07<00:13, 23.22it/s]ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+[A
+Processing Lean 4 Codes:  40%|███▉      | 204/512 [00:08<00:15, 19.96it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  41%|████      | 210/512 [00:08<00:12, 23.71it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  43%|████▎     | 218/512 [00:08<00:09, 31.37it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  43%|████▎     | 222/512 [00:08<00:09, 30.18it/s]ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+[AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  44%|████▍     | 226/512 [00:08<00:10, 26.13it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  45%|████▌     | 232/512 [00:09<00:09, 29.46it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  46%|████▌     | 236/512 [00:09<00:09, 30.06it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  47%|████▋     | 240/512 [00:09<00:09, 28.72it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  47%|████▋     | 243/512 [00:09<00:09, 28.67it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  48%|████▊     | 247/512 [00:09<00:10, 26.15it/s][A
+Processing Lean 4 Codes:  49%|████▉     | 253/512 [00:09<00:07, 32.88it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  50%|█████     | 257/512 [00:09<00:09, 26.97it/s]ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+[AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  51%|█████     | 261/512 [00:10<00:11, 21.33it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:  52%|█████▏    | 264/512 [00:10<00:11, 20.68it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  53%|█████▎    | 270/512 [00:10<00:10, 23.68it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  53%|█████▎    | 273/512 [00:10<00:10, 23.11it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:  54%|█████▍    | 276/512 [00:10<00:10, 21.85it/s]ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+[A
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:  54%|█████▍    | 279/512 [00:11<00:12, 18.65it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:  55%|█████▍    | 281/512 [00:11<00:17, 13.47it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  55%|█████▌    | 283/512 [00:11<00:15, 14.33it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:  58%|█████▊    | 297/512 [00:11<00:05, 36.45it/s]ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+[A
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:  59%|█████▉    | 302/512 [00:12<00:07, 27.63it/s][A
+Processing Lean 4 Codes:  60%|█████▉    | 306/512 [00:12<00:07, 29.42it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:  61%|██████    | 310/512 [00:12<00:07, 26.99it/s]ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+[A
+Processing Lean 4 Codes:  61%|██████▏   | 314/512 [00:12<00:08, 23.09it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  63%|██████▎   | 323/512 [00:12<00:06, 28.61it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  64%|██████▍   | 330/512 [00:12<00:05, 34.44it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:  66%|██████▌   | 336/512 [00:12<00:04, 37.41it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:  67%|██████▋   | 341/512 [00:13<00:04, 36.15it/s]ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+[AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  67%|██████▋   | 345/512 [00:13<00:06, 25.14it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  68%|██████▊   | 349/512 [00:13<00:06, 25.57it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  70%|██████▉   | 358/512 [00:13<00:04, 31.43it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  71%|███████   | 364/512 [00:14<00:05, 27.66it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:  73%|███████▎  | 374/512 [00:14<00:03, 36.43it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  74%|███████▍  | 379/512 [00:14<00:04, 29.14it/s]ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+[AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  75%|███████▍  | 383/512 [00:14<00:05, 22.79it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  76%|███████▌  | 389/512 [00:14<00:04, 27.44it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:  77%|███████▋  | 394/512 [00:15<00:03, 30.40it/s]ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+[AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  78%|███████▊  | 398/512 [00:15<00:04, 25.39it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  79%|███████▊  | 402/512 [00:15<00:04, 24.17it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  79%|███████▉  | 405/512 [00:15<00:04, 22.63it/s]ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+[AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:  80%|███████▉  | 408/512 [00:16<00:05, 19.53it/s]ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+[A
+Processing Lean 4 Codes:  80%|████████  | 411/512 [00:16<00:05, 17.22it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  82%|████████▏ | 420/512 [00:16<00:03, 24.78it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  83%|████████▎ | 427/512 [00:16<00:03, 27.85it/s]ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+[A
+Processing Lean 4 Codes:  84%|████████▍ | 430/512 [00:16<00:03, 23.55it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:  86%|████████▌ | 440/512 [00:16<00:02, 33.59it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  87%|████████▋ | 444/512 [00:17<00:02, 24.00it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  89%|████████▉ | 456/512 [00:17<00:01, 38.58it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  93%|█████████▎| 477/512 [00:17<00:00, 62.91it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:  95%|█████████▍| 485/512 [00:17<00:00, 43.51it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:  96%|█████████▌| 492/512 [00:18<00:00, 28.74it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  97%|█████████▋| 497/512 [00:18<00:00, 30.12it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes: 100%|██████████| 512/512 [00:18<00:00, 27.63it/s]
+INFO:root:Total time taken: 18.57 seconds
+INFO:/lustre/fast/fast/txiao/zly/ckpt/DeepSeek-Prover-V1.5-RL_numina-math-lean4-sft_evaluator_logger:Data 16 to 24 finished
+INFO:/lustre/fast/fast/txiao/zly/ckpt/DeepSeek-Prover-V1.5-RL_numina-math-lean4-sft_evaluator_logger:Number of correct proofs so far: 0
+INFO:/lustre/fast/fast/txiao/zly/ckpt/DeepSeek-Prover-V1.5-RL_numina-math-lean4-sft_evaluator_logger:Ids: set()
+Processing batches:  10%|▉         | 3/31 [01:57<19:17, 41.33s/it]INFO:/lustre/fast/fast/txiao/zly/ckpt/DeepSeek-Prover-V1.5-RL_numina-math-lean4-sft_evaluator_logger:Generating proofs...
+
+
+Processed prompts:   0%|          | 0/8 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s][A
+Processed prompts:  12%|█▎        | 1/8 [00:05<00:41,  5.89s/it, est. speed input: 20.21 toks/s, output: 853.87 toks/s][A
+Processed prompts:  25%|██▌       | 2/8 [00:07<00:20,  3.35s/it, est. speed input: 59.24 toks/s, output: 1650.63 toks/s][A
+Processed prompts:  50%|█████     | 4/8 [00:09<00:07,  1.98s/it, est. speed input: 87.98 toks/s, output: 2298.30 toks/s][A
+Processed prompts:  62%|██████▎   | 5/8 [00:14<00:08,  2.67s/it, est. speed input: 85.55 toks/s, output: 2108.48 toks/s][A
+Processed prompts:  75%|███████▌  | 6/8 [00:16<00:05,  2.70s/it, est. speed input: 80.26 toks/s, output: 2874.44 toks/s][A
+Processed prompts:  88%|████████▊ | 7/8 [00:17<00:02,  2.18s/it, est. speed input: 85.44 toks/s, output: 3152.00 toks/s][A
+Processed prompts: 100%|██████████| 8/8 [00:27<00:00,  4.50s/it, est. speed input: 62.59 toks/s, output: 2585.43 toks/s][AProcessed prompts: 100%|██████████| 8/8 [00:27<00:00,  3.45s/it, est. speed input: 62.59 toks/s, output: 2585.43 toks/s]
+INFO:/lustre/fast/fast/txiao/zly/ckpt/DeepSeek-Prover-V1.5-RL_numina-math-lean4-sft_evaluator_logger:Done generating. Verifying proofs...
+
+
+Processing Lean 4 Codes:   0%|          | 0/512 [00:00<?, ?it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:   0%|          | 1/512 [00:00<01:43,  4.95it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:   0%|          | 2/512 [00:00<03:45,  2.26it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:   1%|          | 4/512 [00:00<01:41,  5.01it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:   4%|▍         | 21/512 [00:01<00:16, 29.90it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:   6%|▋         | 33/512 [00:01<00:11, 43.01it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:   8%|▊         | 39/512 [00:01<00:12, 38.26it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:   9%|▊         | 44/512 [00:01<00:17, 27.07it/s]ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+[A
+Processing Lean 4 Codes:   9%|▉         | 48/512 [00:02<00:21, 21.80it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:  10%|█         | 53/512 [00:02<00:19, 24.15it/s]ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+[AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:  11%|█         | 57/512 [00:02<00:22, 20.33it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  12%|█▏        | 60/512 [00:02<00:23, 19.44it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  12%|█▎        | 64/512 [00:02<00:20, 22.25it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:  13%|█▎        | 69/512 [00:03<00:23, 18.80it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  14%|█▍        | 72/512 [00:03<00:23, 18.40it/s]ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+[A
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:  15%|█▍        | 75/512 [00:03<00:23, 18.40it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  16%|█▌        | 82/512 [00:03<00:17, 24.50it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:  18%|█▊        | 91/512 [00:03<00:11, 36.39it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  21%|██▏       | 110/512 [00:04<00:08, 45.40it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:  22%|██▏       | 115/512 [00:04<00:16, 24.32it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  24%|██▍       | 122/512 [00:04<00:14, 27.86it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  27%|██▋       | 139/512 [00:05<00:09, 38.30it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:  28%|██▊       | 144/512 [00:05<00:10, 36.31it/s]ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+[AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:  29%|██▉       | 149/512 [00:05<00:10, 34.60it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:  30%|██▉       | 153/512 [00:06<00:13, 25.99it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  31%|███       | 157/512 [00:06<00:16, 21.01it/s][A
+Processing Lean 4 Codes:  31%|███▏      | 160/512 [00:06<00:15, 22.08it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  32%|███▏      | 165/512 [00:06<00:13, 25.37it/s][A
+Processing Lean 4 Codes:  33%|███▎      | 168/512 [00:06<00:14, 23.03it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:  34%|███▎      | 172/512 [00:07<00:15, 22.41it/s][A
+Processing Lean 4 Codes:  34%|███▍      | 175/512 [00:07<00:17, 19.63it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  35%|███▍      | 179/512 [00:07<00:14, 22.63it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  37%|███▋      | 187/512 [00:07<00:10, 30.21it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmp814canaw.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpse8whkuj.in: No such file
+
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpm1ngxgea.in: No such file
+Processing Lean 4 Codes:  38%|███▊      | 196/512 [00:07<00:10, 30.89it/s]ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpf362kj1g.in: No such file
+[A
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpig9i790d.in: No such file
+Processing Lean 4 Codes:  39%|███▉      | 200/512 [00:07<00:11, 27.85it/s]ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmp5l6d1p_2.in: No such file
+[A
+Processing Lean 4 Codes:  40%|███▉      | 203/512 [00:08<00:13, 23.57it/s][AERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpx2_lvzmp.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmp0s7foju0.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpt63t7lyr.in: No such file
+
+Processing Lean 4 Codes:  41%|████      | 210/512 [00:08<00:10, 29.44it/s][AERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmphg23e5n2.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpv3mnge0h.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpfqxcdjnc.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmp2ib96aov.in: No such file
+
+Processing Lean 4 Codes:  42%|████▏     | 214/512 [00:08<00:10, 28.84it/s][AERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpcjaalq6x.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpw4p2lqyf.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpmow1l6xf.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpa8din9pv.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpnrbit_0h.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpulmmx2o8.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpqmo7ystl.in: No such file
+
+Processing Lean 4 Codes:  43%|████▎     | 218/512 [00:08<00:13, 21.80it/s][AERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmp0n1vh_l7.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpdrqqzscn.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpzu0c2hpa.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpmsgwb8oc.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpadgecmy_.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpobydl9uu.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpww7l_b5n.in: No such file
+
+Processing Lean 4 Codes:  44%|████▍     | 224/512 [00:08<00:11, 25.47it/s][AERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmp09y6_f6a.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmp4c8w5w8z.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmp2tyk_d3p.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpigev1tep.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmp9ym5itgr.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmprkqocu0h.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmphc9su62_.in: No such file
+
+Processing Lean 4 Codes:  45%|████▌     | 231/512 [00:08<00:08, 31.82it/s][AERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpi4me51so.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpbs8keotc.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpjvjj04vf.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpkzyqcm79.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpqc_991yq.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpfqx61xdb.in: No such file
+
+Processing Lean 4 Codes:  46%|████▋     | 237/512 [00:09<00:07, 35.48it/s]ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpnshx6ilw.in: No such file
+[A
+Processing Lean 4 Codes:  47%|████▋     | 241/512 [00:09<00:07, 35.12it/s][AERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpmrx2ygx4.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmp_64u944_.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpdyd5w705.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpss9t0wt3.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpbx9ae8os.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpi7cz3onf.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpauimpt3h.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmp2fkp1_gq.in: No such file
+
+Processing Lean 4 Codes:  48%|████▊     | 245/512 [00:09<00:08, 29.94it/s][AERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmp8ybfj3z4.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpafeud589.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmppekv8omu.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmp_fdk8643.in: No such file
+
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmphy25n_qa.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpad3ckzb5.in: No such file
+Processing Lean 4 Codes:  49%|████▉     | 253/512 [00:09<00:08, 32.26it/s][AERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpqqukfs18.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpy3u4tdwh.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpd76tjsnc.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpt5egyo4s.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpucigk659.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpdm5l2277.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmppa8obrj6.in: No such file
+
+Processing Lean 4 Codes:  50%|█████     | 257/512 [00:09<00:10, 23.69it/s][AERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmp_r95slsf.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpgxz4t0lj.in: No such file
+
+Processing Lean 4 Codes:  52%|█████▏    | 264/512 [00:10<00:08, 30.72it/s][AERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpaenmwnds.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmp57r8pbmb.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpcdsh6vb8.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpn479o2w9.in: No such file
+
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmp5dg81op2.in: No such file
+Processing Lean 4 Codes:  52%|█████▏    | 268/512 [00:10<00:08, 28.13it/s][AERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpmqr2ibig.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmp2v3xrztk.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cd: can't cd to None/mathlib4
+
+Processing Lean 4 Codes:  53%|█████▎    | 272/512 [00:10<00:08, 29.43it/s][AERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpfm8r0zn_.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpk92k9jde.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpcij394bw.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpa5oa1rn2.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpkq1iuz62.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpgsjw2kov.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpcj8fb9y0.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmp4b24uypu.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpsllo9qgu.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpfnvulkyd.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpq9c5b4p8.in: No such file
+
+Processing Lean 4 Codes:  54%|█████▍    | 278/512 [00:10<00:08, 27.22it/s][AERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpk98mcrzg.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpg8g81yb9.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmps62fopwo.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmp1rfo6g_z.in: No such file
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpxpeewrqk.in: No such file
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+Processing Lean 4 Codes:  56%|█████▌    | 287/512 [00:10<00:06, 33.45it/s][AERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 2 on attempt 1: /bin/sh: 1: cannot open /lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmpq0u1qr5j.in: No such file
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+Processing Lean 4 Codes:  57%|█████▋    | 291/512 [00:10<00:06, 33.64it/s][AProcessing Lean 4 Codes:  57%|█████▋    | 294/512 [00:10<00:08, 26.92it/s]
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+ERROR:root:Command failed with return code 127 on attempt 1: /bin/sh: 1: lake: not found
+2025-02-09 04:18:21 [ERROR] Error processing batch: [Errno 2] No such file or directory: '/lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmp0ey7xo9v.lean'
+ERROR:/lustre/fast/fast/txiao/zly/ckpt/DeepSeek-Prover-V1.5-RL_numina-math-lean4-sft_evaluator_logger:Error processing batch: [Errno 2] No such file or directory: '/lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmp0ey7xo9v.lean'
+2025-02-09 04:18:21 [ERROR] Error processing batch: [Errno 2] No such file or directory: '/lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmp0ey7xo9v.lean'
+ERROR:/lustre/fast/fast/txiao/zly/ckpt/DeepSeek-Prover-V1.5-RL_numina-math-lean4-sft_evaluator_logger:Error processing batch: [Errno 2] No such file or directory: '/lustre/fast/fast/txiao/zly/lean/math_tree/autoformalizer/evaluation/None/mathlib4/tmp/tmp0ey7xo9v.lean'
+INFO:/lustre/fast/fast/txiao/zly/ckpt/DeepSeek-Prover-V1.5-RL_numina-math-lean4-sft_evaluator_logger:Number of correct proofs so far: 0
+INFO:/lustre/fast/fast/txiao/zly/ckpt/DeepSeek-Prover-V1.5-RL_numina-math-lean4-sft_evaluator_logger:Ids: set()
+Processing batches:  13%|█▎        | 4/31 [02:37<18:16, 40.62s/it]INFO:/lustre/fast/fast/txiao/zly/ckpt/DeepSeek-Prover-V1.5-RL_numina-math-lean4-sft_evaluator_logger:Generating proofs...
+
+
+Processed prompts:   0%|          | 0/8 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s][A

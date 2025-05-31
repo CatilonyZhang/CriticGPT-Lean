@@ -1,0 +1,25 @@
+# Dataset configuration
+data_path: 'AI-MO/numina-math-lean4-sft'
+data_split: ['train']
+has_header: true # if false, adds a default header
+has_sorry: true # if true, removes the sorry from the end of the formal statement
+formal_columns: ['lean4_code'] # columns to sum to get the formal statement
+formal_proof: ['lean4_solution'] # columns to sum to get the formal proof
+informal_statement: ['problem'] 
+informal_proof: ['informal_solution']
+
+info_columns: []
+additional_colunms: []
+index_column: 'index'
+
+
+batch_size: 32
+model_path: 'ep-20250128143818-wq8s5'
+sampling_config:
+  n: 1
+  temperature: 0.7
+  max_tokens: 4096
+  top_p: 0.95
+
+
+
